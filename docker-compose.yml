@@ -17,7 +17,7 @@ services:
     environment:
       - DB_HOST=db
       - DB_NAME=psn_assessment
-      - DB_USER=psn
+      - DB_USER=root
       - DB_PASS=secret
     depends_on:
       - db
@@ -30,8 +30,6 @@ services:
       - db_dev_data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_PASSWORD=secret
-      - MYSQL_USER=psn
       - MYSQL_DATABASE=psn_assessment
 volumes:
   db_dev_data:
