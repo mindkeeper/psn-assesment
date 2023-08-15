@@ -41,4 +41,3 @@ class Customer(AbstractBaseUser, PermissionsMixin):
 
     objects = CustomerManager()
     USERNAME_FIELD = "email"
-
